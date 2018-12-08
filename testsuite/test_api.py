@@ -258,7 +258,7 @@ class APITestCase(unittest.TestCase):
         pep8style = pycodestyle.StyleGuide(paths=[E11])
 
         # Default lists of checkers
-        self.assertTrue(len(pep8style.options.physical_checks) > 4)
+        self.assertTrue(len(pep8style.options.physical_checks) > 3)
         self.assertTrue(len(pep8style.options.logical_checks) > 10)
         self.assertEqual(len(pep8style.options.ast_checks), 0)
 

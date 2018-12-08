@@ -3,7 +3,7 @@ for a in 'abc':
     for b in 'xyz':
         print a  # indented with 8 spaces
 	print b  # indented with 1 tab
-#: E101 E122 W191 W191
+#: E101 E101 E101 E101 E101 E101 E101 E101 E101 E122 W191 W191
 if True:
 	pass
 
@@ -27,7 +27,7 @@ class TestP4Poller(unittest.TestCase):
         pass
 
 #
-#: E101 W191 W191
+#: W191 W191
 if True:
 	foo(1,
 	    2)
@@ -38,7 +38,7 @@ def test_keys(self):
 	u'Norrbotten',
 	u'V\xe4sterbotten',
     ])
-#: E101 W191
+#: W191
 if True:
     print("""
 	tab at start of this line
